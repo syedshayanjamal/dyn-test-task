@@ -7,26 +7,26 @@ Fully responsive and works on both desktop and mobile.
 ---
 
 ## Project Structure Overview
-
+```bash
 src/
-│
 ├─ components/
 │  ├─ PasswordBox.vue              # Main password change form (2-step flow)
 │  ├─ DynInput.vue                 # Reusable input with validation states
-│  └─ DynInputPasswordToggle.vue   # Eye icon to toggle password visibility
-│  └─ ToastHost.vue                # For success or error messagess display 
+│  ├─ DynInputPasswordToggle.vue   # Eye icon to toggle password visibility
+│  └─ ToastHost.vue                # For success or error messages display
 │
 ├─ composables/
 │  ├─ usePasswordRules.ts          # Validation logic (length, strength, similarity)
 │  ├─ useInputPasswordToggle.ts    # Manages password visibility toggle
-│  └─ useUpdatePassword.ts         # Handles form submission, validation, and tracking
-│  └─ useToast.ts                  # Manages global toast notifications.
-│ 
+│  ├─ useUpdatePassword.ts         # Handles form submission, validation, and tracking
+│  └─ useToast.ts                  # Manages global toast notifications
+│
 ├─ analytics/
 │  └─ tracker.ts                   # Simple analytics hook (console log + timestamps)
 │
 └─ tests/
-   └─ password-rules.spec.ts     # Unit tests for password validation
+   └─ password-rules.spec.ts       # Unit tests for password validation
+```
 
 
 ---
